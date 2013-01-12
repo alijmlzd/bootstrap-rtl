@@ -1,0 +1,45 @@
+/*
+ * Twitter Bootstrap RTL
+ * by @alihaa
+ */
+
+
+/* Grid Sysytem */
+
+.container, .container-fluid {
+  direction: rtl;
+}
+
+[class*="span"] {
+  float: right;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+
+/* Navbar */
+
+.navbar .btn-navbar {
+  float: left;
+}
+
+body > .navbar .brand {
+  margin-left: auto;
+  margin-right: 20px;
+  float: left;
+}
+
+.navbar .nav {
+  left: auto;
+  right: 0;
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+.navbar .nav > li {
+  float: right;
+}
+
+
+
+
