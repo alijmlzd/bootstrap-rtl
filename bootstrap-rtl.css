@@ -4,29 +4,491 @@
  */
 
 
-/* Grid Sysytem */
+/* Elements */
 
-.container, .container-fluid {
-  direction: rtl;
+ul,
+ol {
+  margin: 0 25px 10px 0;
 }
 
-[class*="span"] {
+ul.unstyled,
+ol.unstyled {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+ul.inline,
+ol.inline {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+dd {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.dl-horizontal dt {
+  float: right;
+  clear: right;
+  text-align: left;
+}
+
+.dl-horizontal dd {
+  margin-left: auto;
+  margin-right: 180px;
+}
+
+blockquote {
+  padding: 0 15px 0 0;
+  border-left: none;
+  border-right: 5px solid #eeeeee;
+}
+
+code, pre {
+  direction: ltr;
+}
+
+.radio,
+.checkbox {
+  padding-left: auto;
+  padding-right: 20px;
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
   float: right;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: -20px;
 }
 
-
-/* Navbar */
-
-.navbar .btn-navbar {
-  float: left;
-}
-
-body > .navbar .brand {
+.radio.inline + .radio.inline,
+.checkbox.inline + .checkbox.inline {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+input[class*="span"],
+select[class*="span"],
+textarea[class*="span"],
+.uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+input,
+textarea,
+.uneditable-input {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.help-inline {
+  padding-left: auto;
+  padding-right: 5px;
+}
+
+.input-append input,
+.input-prepend input,
+.input-append select,
+.input-prepend select,
+.input-append .uneditable-input,
+.input-prepend .uneditable-input {
+  *margin-left: auto;
+  *margin-right: 0;
+}
+
+.input-prepend .add-on,
+.input-prepend .btn {
+  margin-right: auto;
+  margin-left: -1px;
+}
+
+.input-append .add-on,
+.input-append .btn,
+.input-append .btn-group {
+  margin-left: auto;
+  margin-right: -1px;
+}
+
+.input-prepend.input-append .add-on:first-child,
+.input-prepend.input-append .btn:first-child {
+  margin-right: auto;
+  margin-left: -1px;
+}
+
+.input-prepend.input-append .add-on:last-child,
+.input-prepend.input-append .btn:last-child {
+  margin-left: auto;
+  margin-right: -1px;
+}
+
+.input-prepend.input-append .btn-group:first-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.form-search .radio,
+.form-search .checkbox,
+.form-inline .radio,
+.form-inline .checkbox {
+  padding-left: auto;
+  padding-right: 0;
+}
+
+.form-search .radio input[type="radio"],
+.form-search .checkbox input[type="checkbox"],
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+  float: right;
+  margin-left: 3px;
+  margin-right: 0;
+}
+
+.form-horizontal .control-label {
+  float: right;
+  text-align: left;
+}
+
+.form-horizontal .controls {
+  *padding-left: auto;
+  *padding-right: 20px;
+  margin-left: auto;
+  *margin-left: auto;
+  margin-right: 180px;
+  *margin-right: 0;
+}
+
+.form-horizontal .controls:first-child {
+  *padding-left: auto;
+  *padding-right: 180px;
+}
+
+.form-horizontal .form-actions {
+  padding-left: auto;
+  padding-right: 180px;
+}
+
+.table th,
+.table td {
+  text-align: right;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 0;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-left: 0;
+  border-right: 1px solid #dddddd;
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child {
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0;
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+      -moz-border-radius-topright: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+      -moz-border-radius-topright: 0;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+      -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+      -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+      -moz-border-radius-bottomright: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+      -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+      -moz-border-radius-bottomleft: 4px;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+      -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+      -moz-border-radius-bottomright: 0;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+      -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+      -moz-border-radius-bottomleft: 0;
+}
+
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0;
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+      -moz-border-radius-topright: 4px;
+}
+
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+      -moz-border-radius-topright: 0;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+      -moz-border-radius-topleft: 4px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  *margin-right: auto;
+  *margin-left: .3em;
+}
+
+.dropdown .caret {
+  margin-left: auto;
+  margin-right: 2px;
+}
+
+.dropdown-menu {
+  left: auto;
+  right: 0;
+  float: right;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  left: auto;
+  right: 100%;
+  margin-left: auto;
+  margin-right: -1px;
+  -webkit-border-radius: 6px 0 6px 6px;
+     -moz-border-radius: 6px 0 6px 6px;
+          border-radius: 6px 0 6px 6px;
+}
+
+.dropup .dropdown-submenu > .dropdown-menu {
+  -webkit-border-radius: 5px 5px 0 5px;
+     -moz-border-radius: 5px 5px 0 5px;
+          border-radius: 5px 5px 0 5px;
+}
+
+.dropdown-submenu > a:after {
   float: left;
+  margin-right: auto;
+  margin-left: -10px;
+  border-left-color: #cccccc;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: auto;
+  right: -100%;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.btn {
+  *margin-left: auto;
+  *margin-right: .3em;
+}
+
+.btn:first-child {
+  *margin-left: auto;
+  *margin-right: 0;
+}
+
+.btn-group {
+  *margin-left: auto;
+  *margin-right: .3em;
+}
+
+.btn-group:first-child {
+  *margin-left: auto;
+  *margin-right: 0;
+}
+
+.btn-group + .btn-group {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.btn-toolbar > .btn + .btn,
+.btn-toolbar > .btn-group + .btn,
+.btn-toolbar > .btn + .btn-group {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.btn-group > .btn + .btn {
+  margin-left: auto;
+  margin-right: -1px;
+}
+
+.btn-group > .btn:first-child {
+  margin-left: auto;
+  margin-right: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.btn-group > .btn.large:first-child {
+  margin-left: auto;
+  margin-right: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-topright: 6px;
+}
+
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+}
+
+.btn .caret {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.btn-group-vertical > .btn + .btn {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.alert {
+  padding: 8px 14px 8px 35px;
+  position: relative;
+}
+
+.alert .close {
+  position: absolute;
+  right: auto;
+  left: 14px;
+  top: 8px;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nav-list [class^="icon-"],
+.nav-list [class*=" icon-"] {
+  margin-right: auto;
+  margin-left: 2px;
+}
+
+.nav-tabs > li,
+.nav-pills > li {
+  float: right;
+}
+
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  margin-right: auto;
+  margin-left: 2px;
+}
+
+.nav-stacked > li > a {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.navbar .brand {
+  float: right;
+  padding: 10px 0 10px 20px;
+  margin-left: auto;
+  margin-right: -20px;
+}
+
+.navbar .divider-vertical {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #f2f2f2;
+}
+
+.navbar-search {
+  float: right;
 }
 
 .navbar .nav {
@@ -36,10 +498,545 @@ body > .navbar .brand {
   margin: 0 0 0 10px;
 }
 
+.navbar .nav.pull-right {
+  float: left;
+  margin-right: auto;
+  margin-left: 0;
+}
+
 .navbar .nav > li {
   float: right;
 }
 
+.navbar .btn-navbar {
+  float: left;
+}
+
+.navbar .nav > li > .dropdown-menu:before {
+  left: auto;
+  right: 9px;
+}
+
+.navbar .nav > li > .dropdown-menu:after {
+  left: auto;
+  right: 10px;
+}
+
+.pagination ul {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+  float: right;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  border-left-width: 0;
+  border-right-width: 1px;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.pagination-large ul > li:first-child > a,
+.pagination-large ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-topright: 6px;
+}
+
+.pagination-large ul > li:last-child > a,
+.pagination-large ul > li:last-child > span {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+}
+
+.pagination-mini ul > li:first-child > a,
+.pagination-small ul > li:first-child > a,
+.pagination-mini ul > li:first-child > span,
+.pagination-small ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+          border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-topright: 3px;
+}
+
+.pagination-mini ul > li:last-child > a,
+.pagination-small ul > li:last-child > a,
+.pagination-mini ul > li:last-child > span,
+.pagination-small ul > li:last-child > span {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 3px;
+          border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+}
+
+.pager .next > a,
+.pager .next > span {
+  float: left;
+}
+
+.pager .previous > a,
+.pager .previous > span {
+  float: right;
+}
+
+.modal {
+  left: auto;
+  right: 50%;
+  margin-left: auto;
+  margin-right: -280px;
+}
+
+.modal-footer .btn + .btn {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: auto;
+  margin-right: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.popover.top .arrow {
+  left: auto;
+  right: 50%;
+  margin-left: auto;
+  margin-right: -11px;
+}
+
+.popover.top .arrow:after {
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+.popover.bottom .arrow {
+  left: auto;
+  right: 50%;
+  margin-left: auto;
+  margin-right: -11px;
+}
+
+.popover.bottom .arrow:after {
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+.thumbnails {
+  margin-left: auto;
+  margin-right: -20px;
+}
+
+.row-fluid .thumbnails {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.thumbnails > li {
+  float: right;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.progress .bar {
+  float: right;
+}
 
 
+/* Grid Sysytem */
 
+.container, .container-fluid {
+  direction: rtl;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: -20px;
+}
+
+[class*="span"] {
+  float: right;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.offset12 {
+  margin-left: auto;
+  margin-right: 980px;
+}
+
+.offset11 {
+  margin-left: auto;
+  margin-right: 900px;
+}
+
+.offset10 {
+  margin-left: auto;
+  margin-right: 820px;
+}
+
+.offset9 {
+  margin-left: auto;
+  margin-right: 740px;
+}
+
+.offset8 {
+  margin-left: auto;
+  margin-right: 660px;
+}
+
+.offset7 {
+  margin-left: auto;
+  margin-right: 580px;
+}
+
+.offset6 {
+  margin-left: auto;
+  margin-right: 500px;
+}
+
+.offset5 {
+  margin-left: auto;
+  margin-right: 420px;
+}
+
+.offset4 {
+  margin-left: auto;
+  margin-right: 340px;
+}
+
+.offset3 {
+  margin-left: auto;
+  margin-right: 260px;
+}
+
+.offset2 {
+  margin-left: auto;
+  margin-right: 180px;
+}
+
+.offset1 {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.row-fluid [class*="span"] {
+  float: right;
+  margin-left: auto;
+  margin-right: 2.127659574468085%;
+  *margin-right: 2.074468085106383%;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: auto;
+  margin-right: 2.127659574468085%;
+}
+
+.row-fluid .offset12 {
+  margin-left: auto;
+  margin-right: 104.25531914893617%;
+  *margin-right: 104.14893617021275%;
+}
+
+.row-fluid .offset12:first-child {
+  margin-left: auto;
+  margin-right: 102.12765957446808%;
+  *margin-right: 102.02127659574467%;
+}
+
+.row-fluid .offset11 {
+  margin-left: auto;
+  margin-right: 95.74468085106382%;
+  *margin-right: 95.6382978723404%;
+}
+
+.row-fluid .offset11:first-child {
+  margin-left: auto;
+  margin-right: 93.61702127659574%;
+  *margin-right: 93.51063829787232%;
+}
+
+.row-fluid .offset10 {
+  margin-left: auto;
+  margin-right: 87.23404255319149%;
+  *margin-right: 87.12765957446807%;
+}
+
+.row-fluid .offset10:first-child {
+  margin-left: auto;
+  margin-right: 85.1063829787234%;
+  *margin-right: 84.99999999999999%;
+}
+
+.row-fluid .offset9 {
+  margin-left: auto;
+  margin-right: 78.72340425531914%;
+  *margin-right: 78.61702127659572%;
+}
+
+.row-fluid .offset9:first-child {
+  margin-left: auto;
+  margin-right: 76.59574468085106%;
+  *margin-right: 76.48936170212764%;
+}
+
+.row-fluid .offset8 {
+  margin-left: auto;
+  margin-right: 70.2127659574468%;
+  *margin-right: 70.10638297872339%;
+}
+
+.row-fluid .offset8:first-child {
+  margin-left: auto;
+  margin-right: 68.08510638297872%;
+  *margin-right: 67.9787234042553%;
+}
+
+.row-fluid .offset7 {
+  margin-left: auto;
+  margin-right: 61.70212765957446%;
+  *margin-right: 61.59574468085106%;
+}
+
+.row-fluid .offset7:first-child {
+  margin-left: auto;
+  margin-right: 59.574468085106375%;
+  *margin-right: 59.46808510638297%;
+}
+
+.row-fluid .offset6 {
+  margin-left: auto;
+  margin-right: 53.191489361702125%;
+  *margin-right: 53.085106382978715%;
+}
+
+.row-fluid .offset6:first-child {
+  margin-left: auto;
+  margin-right: 51.063829787234035%;
+  *margin-right: 50.95744680851063%;
+}
+
+.row-fluid .offset5 {
+  margin-left: auto;
+  margin-right: 44.68085106382979%;
+  *margin-right: 44.57446808510638%;
+}
+
+.row-fluid .offset5:first-child {
+  margin-left: auto;
+  margin-right: 42.5531914893617%;
+  *margin-right: 42.4468085106383%;
+}
+
+.row-fluid .offset4 {
+  margin-left: auto;
+  margin-right: 36.170212765957444%;
+  *margin-right: 36.06382978723405%;
+}
+
+.row-fluid .offset4:first-child {
+  margin-left: auto;
+  margin-right: 34.04255319148936%;
+  *margin-right: 33.93617021276596%;
+}
+
+.row-fluid .offset3 {
+  margin-left: auto;
+  margin-right: 27.659574468085104%;
+  *margin-right: 27.5531914893617%;
+}
+
+.row-fluid .offset3:first-child {
+  margin-left: auto;
+  margin-right: 25.53191489361702%;
+  *margin-right: 25.425531914893618%;
+}
+
+.row-fluid .offset2 {
+  margin-left: auto;
+  margin-right: 19.148936170212764%;
+  *margin-right: 19.04255319148936%;
+}
+
+.row-fluid .offset2:first-child {
+  margin-left: auto;
+  margin-right: 17.02127659574468%;
+  *margin-right: 16.914893617021278%;
+}
+
+.row-fluid .offset1 {
+  margin-left: auto;
+  margin-right: 10.638297872340425%;
+  *margin-right: 10.53191489361702%;
+}
+
+.row-fluid .offset1:first-child {
+  margin-left: auto;
+  margin-right: 8.51063829787234%;
+  *margin-right: 8.404255319148938%;
+}
+
+.controls-row [class*="span"] + [class*="span"] {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.controls-row [class*="span"],
+.row-fluid .controls-row [class*="span"] {
+  float: right;
+}
+
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span1,
+.table th.span1 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span2,
+.table th.span2 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span3,
+.table th.span3 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span4,
+.table th.span4 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span5,
+.table th.span5 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span6,
+.table th.span6 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span7,
+.table th.span7 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span8,
+.table th.span8 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span9,
+.table th.span9 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span10,
+.table th.span10 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span11,
+.table th.span11 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.table td.span12,
+.table th.span12 {
+  margin-left: auto;
+  margin-right: 0;
+}
