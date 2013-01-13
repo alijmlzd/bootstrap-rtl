@@ -292,6 +292,10 @@ textarea,
   float: right;
 }
 
+.dropdown-menu.typeahead {
+  right: 18px;
+}
+
 .dropdown-submenu > .dropdown-menu {
   left: auto;
   right: 100%;
@@ -479,7 +483,6 @@ textarea,
   float: right;
   padding: 10px 0 10px 20px;
   margin-left: auto;
-  
 }
 
 .navbar .divider-vertical {
