@@ -490,10 +490,12 @@ textarea,
 }
 
 .alert .close {
-  position: absolute;
   right: auto;
-  left: 14px;
-  top: 8px;
+  left: -21px;
+}
+
+.close {
+  float: left;
 }
 
 .nav {
