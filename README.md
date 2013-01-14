@@ -3,7 +3,7 @@ bootstrap-rtl is a right to left style for twitter bootstrap. its clean and does
 
 ## Usage
 
-just add these lines to <head> (and after main bootstrap styles):
+just add these lines to `<head>` (and after main bootstrap styles):
 
-`<link href="bootstrap-rtl.css" rel="stylesheet">`
-`<link href="bootstrap-responsive-rtl.css" rel="stylesheet">`
+* `<link href="bootstrap-rtl.css" rel="stylesheet">`
+* `<link href="bootstrap-responsive-rtl.css" rel="stylesheet">`
