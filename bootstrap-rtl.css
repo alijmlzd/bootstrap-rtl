@@ -374,14 +374,28 @@ textarea,
   float: left;
   margin-right: auto;
   margin-left: -10px;
-  border-left-color: #cccccc;
+  border-left-color: transparent;
+  border-right-color: #cccccc;
+  border-width: 5px 5px 5px 0;
 }
 
-.dropdown-submenu.pull-left > .dropdown-menu {
+.dropdown-submenu:hover > a:after {
+  border-left-color: transparent;
+  border-right-color: #ffffff;
+}
+
+.dropdown-submenu.pull-right {
+  float: none;
+}
+
+.dropdown-submenu.pull-right > .dropdown-menu {
   left: auto;
   right: -100%;
   margin-left: auto;
   margin-right: 10px;
+  -webkit-border-radius: 0 6px 6px 6px;
+     -moz-border-radius: 0 6px 6px 6px;
+          border-radius: 0 6px 6px 6px;
 }
 
 .btn {
