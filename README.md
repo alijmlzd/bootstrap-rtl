@@ -1,5 +1,7 @@
 
-bootstrap-rtl is a right to left style for twitter bootstrap. its clean and does not make any difference in main bootstrap.
+bootstrap-rtl is a right to left style for [twitter bootstrap](http://twitter.github.com/bootstrap). its clean and does not make any difference in main bootstrap.
+
+note: it always works with the latest version of Bootstrap.
 
 ## Usage
 
