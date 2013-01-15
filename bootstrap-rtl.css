@@ -452,6 +452,37 @@ textarea,
   -moz-border-radius-topright: 4px;
 }
 
+.btn-group:not(.btn-group-vertical) > .btn.btn-large:not(.dropdown-toggle):first-child {
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-topright: 6px;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn.btn-small:not(.dropdown-toggle):first-child,
+.btn-group:not(.btn-group-vertical) > .btn.btn-mini:not(.dropdown-toggle):first-child {
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-topright: 3px;
+}
+
 .btn-group:not(.btn-group-vertical) > .btn:not(.dropdown-toggle):last-child {
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
@@ -467,10 +498,54 @@ textarea,
   -moz-border-radius-bottomleft: 4px;
 }
 
+.btn-group:not(.btn-group-vertical) > .btn.btn-large:not(.dropdown-toggle):last-child {
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn.btn-small:not(.dropdown-toggle):last-child,
+.btn-group:not(.btn-group-vertical) > .btn.btn-mini:not(.dropdown-toggle):last-child {
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+}
+
 .btn-group:not(.btn-group-vertical) > .btn:not(.dropdown-toggle):first-child:last-child {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn.btn-large:not(.dropdown-toggle):first-child:last-child {
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.btn-group:not(.btn-group-vertical) > .btn.btn-small:not(.dropdown-toggle):first-child:last-child,
+.btn-group:not(.btn-group-vertical) > .btn.btn-mini:not(.dropdown-toggle):first-child:last-child {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 
 .btn-group:not(.btn-group-vertical) .btn + .dropdown-toggle {
@@ -486,6 +561,37 @@ textarea,
   border-bottom-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   -moz-border-radius-bottomleft: 4px;
+}
+
+.btn-group:not(.btn-group-vertical) .btn.btn-large + .dropdown-toggle {
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
+}
+
+.btn-group:not(.btn-group-vertical) .btn.btn-small + .dropdown-toggle,
+.btn-group:not(.btn-group-vertical) .btn.btn-mini + .dropdown-toggle {
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
 }
 
 .btn .caret {
